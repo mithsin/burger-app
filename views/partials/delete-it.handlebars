@@ -1,0 +1,30 @@
+{{!---------- Delete Form ----------}}
+<form action="/{{this.id}}?_method=DELETE" method="POST">
+
+  	<button type="submit">mua~HaHa</button>
+
+</form>
+
+
+
+<form action="/burgers/update?_method=PUT" method="POST">
+	<input input type="hidden" type="text" name="burger_id" value={{this.id}}><br>
+    <button type="submit">mua~HaHa</button>
+
+</form>
+
+
+
+
+{{!---------- Add Form ----------}}
+<form action="/burgers/create" method="POST">
+
+  	<div class="form-group">
+        <h2>Add a Burger</h2>
+    	<textarea  id="burger" name="name" rows="5" cols="30"></textarea>
+    	<input type="hidden" name="devoured" value="0">
+
+  	</div>
+
+ 	<button type="submit">Add Burger</button>
+</form>
